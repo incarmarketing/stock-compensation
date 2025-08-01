@@ -64,8 +64,8 @@
             top: 0;
             left: 0;
             transform: translate(0, -50%);
-            width: 80px;
-            height: auto; /* 로고 크기를 너비에 맞춰 자동으로 조정 */
+            width: 100px; /* 회사 로고 크기를 100px로 조정 */
+            height: auto;
         }
         .kosdaq-logo {
             position: absolute;
@@ -73,7 +73,7 @@
             right: 0;
             transform: translate(0, -50%);
             width: 80px;
-            height: auto; /* 로고 크기를 너비에 맞춰 자동으로 조정 */
+            height: auto; /* 코스닥 로고는 기존 크기 유지 */
         }
 
         /* 태블릿 및 데스크톱 환경에서 폰트 크기 조정 */
@@ -93,9 +93,12 @@
             .answer-text {
                 font-size: 1rem; /* 16px */
             }
-            .company-logo,
+            .company-logo {
+                width: 120px; /* 데스크톱에서 회사 로고 크기 확대 */
+                height: auto;
+            }
             .kosdaq-logo {
-                width: 100px; /* 데스크톱에서 로고 크기 확대 */
+                width: 100px; /* 데스크톱에서 코스닥 로고 크기 유지 */
                 height: auto;
             }
         }
