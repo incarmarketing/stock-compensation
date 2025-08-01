@@ -56,18 +56,11 @@
 
         /* 로고 위치를 위한 스타일 */
         .logo-container {
-            position: absolute;
-            top: 1.5rem; /* 상단에서 떨어진 거리 */
-            left: 1.5rem; /* 좌측에서 떨어진 거리 */
+            position: relative;
+            width: 100%;
             display: flex;
-            align-items: center;
-        }
-        .kosdaq-container {
-            position: absolute;
-            top: 1.5rem; /* 상단에서 떨어진 거리 */
-            right: 1.5rem; /* 우측에서 떨어진 거리 */
-            display: flex;
-            align-items: center;
+            justify-content: space-between;
+            align-items: flex-start; /* 로고가 상단에 정렬되도록 수정 */
         }
         .company-logo {
             width: 100px;
@@ -111,22 +104,17 @@
             .main-container {
                 padding-top: 6rem;
             }
-            .logo-container, .kosdaq-container {
-                top: 2rem;
-            }
         }
         
     </style>
 </head>
 <body class="p-4 md:p-8 flex items-center justify-center min-h-screen">
     <div class="max-w-4xl w-full bg-white rounded-xl shadow-lg p-6 md:p-10 border border-gray-200 relative main-container">
-        <!-- 회사 로고 -->
+        <!-- 로고 컨테이너 -->
         <div class="logo-container">
+            <!-- 회사 로고 -->
             <img src="https://raw.githubusercontent.com/incarmarketing/stock-compensation/main/logo.png" alt="회사 로고" class="company-logo">
-        </div>
-
-        <!-- 코스닥 로고 -->
-        <div class="kosdaq-container">
+            <!-- 코스닥 로고 -->
             <img src="https://raw.githubusercontent.com/incarmarketing/stock-compensation/main/kosdaq.png" alt="코스닥 로고" class="kosdaq-logo">
         </div>
 
