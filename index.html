@@ -21,10 +21,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* 기본 폰트 설정 */
+        /* 기본 폰트 및 배경 설정 */
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f7f9fc;
+            /* 한국어 줄바꿈 최적화: 단어 단위로 줄바꿈 */
+            word-break: keep-all;
+            overflow-wrap: break-word;
         }
 
         /* details 태그의 기본 화살표를 숨기고 커스텀 아이콘 사용 */
@@ -95,11 +98,9 @@
             }
             .company-logo {
                 width: 120px;
-                height: auto;
             }
             .kosdaq-logo {
                 width: 100px;
-                height: auto;
             }
             .main-container {
                 padding-top: 6rem;
@@ -121,8 +122,9 @@
         <!-- 메인 제목 -->
         <header class="mb-8 text-center mt-8">
             <h1 class="qna-title font-bold text-gray-900 leading-tight mb-2">회사 주식 특별 배분 상세 Q&A</h1>
+            <!-- 모바일에서 자연스러운 줄바꿈을 위해 <br> 태그 제거 -->
             <p class="qna-subtitle text-gray-600">
-                영업가족 여러분의 정확한 이해를 돕기 위해 주식 특별 배분의 모든 절차와 유의사항에 대해<br>단계별로 질문과 답변을 정리했습니다. 본인에게 해당하는 내용을 꼼꼼히 확인해 주시기 바랍니다.
+                영업가족 여러분의 정확한 이해를 돕기 위해 주식 특별 배분의 모든 절차와 유의사항에 대해 단계별로 질문과 답변을 정리했습니다. 본인에게 해당하는 내용을 꼼꼼히 확인해 주시기 바랍니다.
             </p>
         </header>
 
@@ -141,7 +143,8 @@
                             <svg class="chevron-icon w-5 h-5 text-gray-600 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         </summary>
                         <div class="bg-white p-4 border-t border-gray-300 answer-text text-gray-700 leading-relaxed">
-                            2025년 ISF(Incar Summer Festival) 최종 달성자로 선정된 분들께 지급됩니다. 자세한 내용은 2025년 6월 24일 마케팅부에서 공지한 “회사 성과 공유를 위한 주식 특별 배분 시행의 건.pdf”<br>파일을 참고하시기 바랍니다. 
+                            <!-- 모바일에서 자연스러운 줄바꿈을 위해 <br> 태그 제거 -->
+                            2025년 ISF(Incar Summer Festival) 최종 달성자로 선정된 분들께 지급됩니다. 자세한 내용은 2025년 6월 24일 마케팅부에서 공지한 “회사 성과 공유를 위한 주식 특별 배분 시행의 건.pdf” 파일을 참고하시기 바랍니다. 
                         </div>
                     </details>
                     <!-- Q2 -->
@@ -151,7 +154,8 @@
                             <svg class="chevron-icon w-5 h-5 text-gray-600 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         </summary>
                         <div class="bg-white p-4 border-t border-gray-300 answer-text text-gray-700 leading-relaxed">
-                            세부적인 달성 기준은 IIMS에 공지했던 “회사 성과 공유를 위한 주식 특별 배분 시행의 건.pdf”<br>파일을 참고하시기 바랍니다.
+                             <!-- 모바일에서 자연스러운 줄바꿈을 위해 <br> 태그 제거 -->
+                            세부적인 달성 기준은 IIMS에 공지했던 “회사 성과 공유를 위한 주식 특별 배분 시행의 건.pdf” 파일을 참고하시기 바랍니다.
                         </div>
                     </details>
                     <!-- Q3 -->
@@ -161,7 +165,13 @@
                             <svg class="chevron-icon w-5 h-5 text-gray-600 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         </summary>
                         <div class="bg-white p-4 border-t border-gray-300 answer-text text-gray-700 leading-relaxed">
-                            최종 달성자 명단은 8월 ISF 실적 확정 이후(9월 27일 이후) 확정됩니다. 다만, 원활한 지급 업무를 위해 합산 실적 1구간 달성자 및 상위구간 달성자에게 확정일 이전 제3자 정보제공동의서 제출 및 삼성증권 계좌개설을 안내드립니다.<br>(단, 최종 달성자 확정일 기준 청약철회, 취소, 실효, 해지, 감액 등이 반영되어 최종 달성자에서 제외되거나 구간이 하락할 경우, 지급을 받지 못하거나 수량의 변동이 있을 수 있습니다.)
+                            <!-- 내용 단락을 <p> 태그로 구분하여 가독성 향상 -->
+                            <p class="mb-2">
+                                최종 달성자 명단은 8월 ISF 실적 확정 이후(9월 27일 이후) 확정됩니다. 다만, 원활한 지급 업무를 위해 합산 실적 1구간 달성자 및 상위구간 달성자에게 확정일 이전 제3자 정보제공동의서 제출 및 삼성증권 계좌개설을 안내드립니다.
+                            </p>
+                            <p>
+                                (단, 최종 달성자 확정일 기준 청약철회, 취소, 실효, 해지, 감액 등이 반영되어 최종 달성자에서 제외되거나 구간이 하락할 경우, 지급을 받지 못하거나 수량의 변동이 있을 수 있습니다.)
+                            </p>
                         </div>
                     </details>
                     <!-- Q4 -->
@@ -195,9 +205,9 @@
                         </summary>
                         <div class="bg-white p-4 border-t border-gray-300 answer-text text-gray-700 leading-relaxed">
                             크게 두 가지 절차를 반드시 기한 내에 완료해야 합니다.
-                            <ul class="list-none mt-2 space-y-1 pl-4">
-                                <li>1. 25년 8월 11일부터 월 제3자 정보제공동의 절차 개시(IIMS 또는 IMO에 접속하여 '개인정보 제3자 정보제공동의서’ 제출 절차 진행)</li>
-                                <li>2. 25년 9월 30일까지 삼성증권에서 보낸 URL을 통해 삼성증권 계좌를 만들거나, 이미 계좌를 보유하고 있다면 거래가 가능한 계좌인지 확인합니다.(ISA계좌 사용 불가)</li>
+                            <ul class="list-none mt-2 space-y-2 pl-4">
+                                <li><strong>1. 제3자 정보제공 동의:</strong> 25년 8월 11일부터 IIMS 또는 IMO에 접속하여 '개인정보 제3자 정보제공동의서’ 제출 절차를 진행합니다.</li>
+                                <li><strong>2. 삼성증권 계좌 개설:</strong> 25년 9월 30일까지 삼성증권에서 보낸 URL을 통해 삼성증권 계좌를 만들거나, 이미 계좌를 보유하고 있다면 거래가 가능한 계좌인지 확인합니다.(ISA계좌 사용 불가)</li>
                             </ul>
                         </div>
                     </details>
@@ -253,17 +263,17 @@
                                 <li>1. 본인 인증 실패</li>
                                 <li>2. 비대면 계좌 개설 안심차단 서비스 이용으로 인한 불가 사유</li>
                                 <li>3. 기타
-                                    <ul class="list-disc list-inside mt-1 ml-4">
+                                    <ul class="list-disc list-inside mt-1 ml-4 space-y-1">
                                         <li>가. 외국인의 경우 지점 내방 후 개설(비대면 불가, 대면 가능)</li>
                                         <li>나. 과거 대포통장, 보이스피싱 연루 등의 경우 비대면 계좌개설 시도 시 자동 거절(비대면 대면 모두 개설 불가)</li>
                                         <li>다. 신용불량인 경우도 계좌개설 가능(비대면 가능)
-                                            <ul class="list-circle list-inside mt-1 ml-4">
+                                            <ul class="list-circle list-inside mt-1 ml-4 text-xs">
                                                 <li>※ 법원의 금지 명령이 있는 경우 불가할 수 있음(회생 중 계좌개설 및 주식 지급 등으로 발생할 수 있는 법적 분쟁의 경우 회사가 책임지지 않으므로 반드시 관련 법률 전문가의 상담을 받을 것을 권고합니다.</li>
                                                 <li>※ 신용문제로 개설이 안되는 경우, 증권사나 회사에 즉시 통보해주시기 바랍니다.</li>
                                             </ul>
                                         </li>
                                         <li>라. 비대면 계좌 개설 20일 제한(영업일 기준)의 경우 예외적으로 주식보상전용계좌 개설 가능(비대면 가능)
-                                            <ul class="list-square list-inside mt-1 ml-4">
+                                            <ul class="list-square list-inside mt-1 ml-4 text-xs">
                                                 <li>※ 증권사 또는 은행 계좌개설 이벤트 등 참여로 제한이 걸리는 경우</li>
                                             </ul>
                                         </li>
@@ -288,13 +298,14 @@
                             <svg class="chevron-icon w-5 h-5 text-gray-600 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         </summary>
                         <div class="bg-white p-4 border-t border-gray-300 answer-text text-gray-700 leading-relaxed">
-                            <ul class="list-none mt-2 space-y-1 pl-4">
-                                <li>1. 25년 8월 4일 (제3자 정보제공 동의절차 개시)</li>
-                                <li>2. 25년 8월 11일 (정보제공 동의 영업가족에게 삼성증권에서 계좌개설 URL 발송)</li>
-                                <li>3. 25년 8월 12일 – 25년 9월 26일 (정보제공 동의 및 URL 발송 반복)</li>
-                                <li>4. 25년 9월 27일 (최종대상자 확정)</li>
-                                <li>5. 25년 9월 30일 (삼성증권 계좌개설 완료)</li>
-                                <li>6. 25년 10월 20일 (예정) (영업가족 삼성증권 계좌로 회사 주식 입고)</li>
+                            <p class="mb-2">주요 일정은 아래와 같으며, 최종적으로 <strong>2025년 10월 20일(예정)</strong>에 영업가족님의 삼성증권 계좌로 주식이 입고됩니다.</p>
+                            <ul class="list-none mt-2 space-y-1 pl-4 border-l-2 border-gray-200">
+                                <li><strong>8월 4일:</strong> 제3자 정보제공 동의절차 개시</li>
+                                <li><strong>8월 11일:</strong> 정보제공 동의자 대상 계좌개설 URL 발송 시작</li>
+                                <li><strong>8월 12일 – 9월 26일:</strong> 정보제공 동의 및 URL 발송 반복</li>
+                                <li><strong>9월 27일:</strong> 최종 지급 대상자 확정</li>
+                                <li><strong>9월 30일:</strong> 삼성증권 계좌개설 완료 마감</li>
+                                <li><strong>10월 20일 (예정):</strong> 주식 입고</li>
                             </ul>
                         </div>
                     </details>
